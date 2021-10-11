@@ -1,0 +1,46 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --write \"src/**/*.{js, json, scss}\"",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/SCSS/ --output src/public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taydang/NodeJS_blog.git"
+  },
+  "keywords": [
+    "f8",
+    "blog",
+    "f8",
+    "blog",
+    "f8",
+    "nodeJS"
+  ],
+  "author": "Tay Dang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taydang/NodeJS_blog/issues"
+  },
+  "homepage": "https://github.com/taydang/NodeJS_blog#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.3",
+    "mongoose-delete": "^0.5.3"
+  },
+  "devDependencies": {
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.0",
+    "mongoose-slug-generator": "^1.0.4",
+    "morgan": "^1.10.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  }
+}
